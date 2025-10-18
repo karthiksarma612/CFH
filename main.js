@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(() => setTimeout(() => nav.classList.add('nav-loaded'), 60));
   }
 
+  // icon entrance stagger
+  const icons = Array.from(document.querySelectorAll('.icon'));
+  if (icons.length) {
+    icons.forEach((el, i) => {
+      el.classList.add('icon-load');
+      setTimeout(() => {
+        el.classList.add('icon-loaded');
+        el.classList.remove('icon-load');
+      }, 140 + i * 90);
+    });
+  }
+
   // Single scroll handler to manage nav style and active link
   const onScroll = () => {
     const scrollY = window.scrollY || window.pageYOffset;
