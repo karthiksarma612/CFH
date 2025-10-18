@@ -67,6 +67,26 @@
 
 @keyframes navItemIn { to { opacity: 1; transform: translateY(0) scale(1); } }
 
+/* Icon / button utilities */
+.icon-load { opacity: 0; transform: translateY(8px) scale(0.98); }
+.icon-loaded { animation: iconPopIn 520ms cubic-bezier(.2,.9,.3,1) forwards; }
+
+@keyframes iconPopIn {
+  0% { opacity: 0; transform: translateY(8px) scale(0.94); }
+  60% { opacity: 1; transform: translateY(-6px) scale(1.08); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Micro interactions */
+.pulse { animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+
+.wiggle:hover { animation: wiggle 520ms ease-in-out; }
+@keyframes wiggle { 0% { transform: rotate(0); } 25% { transform: rotate(6deg); } 50% { transform: rotate(-6deg); } 75% { transform: rotate(3deg); } 100% { transform: rotate(0); } }
+
+/* Pop on hover for buttons */
+.pop-on-hover:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 10px 22px rgba(11,122,40,0.12); }
+
 /* Ensure accessibility motion respect: prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   [data-aos], .animate-zoom, .animate-fade-left { transition: none !important; animation: none !important; transform: none !important; opacity: 1 !important; }
