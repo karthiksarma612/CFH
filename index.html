@@ -4,14 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CuraFe Health</title>
- <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <!-- Local Font Awesome (served from assets) -->
+  <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
   <!-- AOS Animation Library -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -25,7 +19,7 @@
   <header>
     <nav class="navbar">
       <div class="nav-container" role="navigation" aria-label="Main navigation">
-        <div class="logo">CuraFe Health</div>
+  <div class="logo">CuraFe Health</div>
         <!-- Mobile menu toggle -->
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
           <span class="hamburger" aria-hidden="true"></span>
@@ -77,6 +71,7 @@
   <section class="about-cards">
     <div class="cards-container">
       <div class="card">
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up">Who We Are</h3>
         <p>
           CuraFe Health is built on a simple belief – healthcare transformation begins with 
@@ -87,6 +82,7 @@
       </div>
 
       <div class="card">
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="80">Mission</h3>
         <p>
           To make a difference by serving people with patient-centric solutions, delivering 
@@ -95,6 +91,7 @@
       </div>
 
       <div class="card">
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="160">Vision</h3>
         <p>
           To be the most trusted partner in transforming healthcare outcomes through innovation 
@@ -109,7 +106,7 @@
     <h2 data-aos="fade-up">Our Services</h2>
     <div class="service-cards">
       <div class="service-card">
-        <div class="icon" data-aos="zoom-in"><i class="fas fa-code" aria-hidden="true"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up">Medical Coding</h3>
         <ul>
           <li>Evaluation & Management (E&M) Coding</li>
@@ -119,12 +116,12 @@
         </ul>
       </div>
       <div class="service-card">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-wave-square"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="80">Revenue Cycle Management</h3>
         <p data-aos="fade-up" data-aos-delay="120">End-to-end support — from charge entry to AR follow-up ensuring faster reimbursements.</p>
       </div>
       <div class="service-card">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="160">Technology Expertise</h3>
         <p data-aos="fade-up" data-aos-delay="200">Skilled in major healthcare systems ensuring smooth integration with your existing platforms.</p>
       </div>
@@ -134,22 +131,22 @@
     <h2 data-aos="fade-up">Our Core Values</h2>
     <div class="value-cards">
       <div class="value-card">
-        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="60">Integrity</h3>
         <p data-aos="fade-up" data-aos-delay="120">We uphold honesty, transparency, and accountability.</p>
       </div>
       <div class="value-card">
-        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-heart"></i></div>
+        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="80">Compassion</h3>
         <p data-aos="fade-up" data-aos-delay="140">We put patients and people at the center of everything we do.</p>
       </div>
       <div class="value-card">
-        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-users"></i></div>
+        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="100">Collaboration</h3>
         <p data-aos="fade-up" data-aos-delay="160">Success is built together, not alone.</p>
       </div>
       <div class="value-card">
-        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="icon" data-aos="fade-up"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
         <h3 data-aos="fade-up" data-aos-delay="120">Innovation</h3>
         <p data-aos="fade-up" data-aos-delay="180">Smarter ideas to transform healthcare every day.</p>
       </div>
@@ -162,22 +159,22 @@
 
     <div class="features">
       <div class="feature-card" data-aos="fade-up">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-check-circle" aria-hidden="true"></i></div>
         <h2 data-aos="fade-up" data-aos-delay="60">High Accuracy</h2>
         <p data-aos="fade-up" data-aos-delay="120">HCC &gt; 95%, E&amp;M Surgical &gt; 98%</p>
       </div>
       <div class="feature-card">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
         <h2 data-aos="fade-up" data-aos-delay="80">Fast Turnaround</h2>
         <p data-aos="fade-up" data-aos-delay="140">24–48 hours</p>
       </div>
       <div class="feature-card">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
         <h2 data-aos="fade-up" data-aos-delay="100">Certifications</h2>
         <p data-aos="fade-up" data-aos-delay="160">AAPC, AHIMA, ISO, HIPAA</p>
       </div>
       <div class="feature-card">
-        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
         <h2 data-aos="fade-up" data-aos-delay="120">Scalability</h2>
         <p data-aos="fade-up" data-aos-delay="180">30 to 300 coders in 4.5 days</p>
       </div>
@@ -243,6 +240,7 @@
       <div class="cards">
         <!-- Left Card -->
         <div class="card">
+          <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
           <h3 data-aos="fade-up">How We Work</h3>
           <ul>
             <li><i class="fa-solid fa-circle-check"></i> Daily quality dashboards</li>
@@ -254,6 +252,7 @@
 
         <!-- Right Card -->
         <div class="card">
+          <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-hands-helping" aria-hidden="true"></i></div>
           <h3 data-aos="fade-up" data-aos-delay="80">Engagement Types</h3>
           <ul>
             <li><i class="fa-solid fa-arrow-right"></i> Offshore Dedicated Team</li>
@@ -274,6 +273,7 @@
       </p>
 
       <div class="vision-card">
+        <div class="icon" data-aos="zoom-in"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
         <h3>Vision for Clients</h3>
         <p class="quote">
           <em>
@@ -293,7 +293,7 @@
       <!-- Left Side - Contact Info -->
       <div class="contact-info">
         <div class="info-box">
-          <div class="icon">📍</div>
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
           <div>
             <h4>Location</h4>
             <p>Bangalore, India</p>
@@ -301,7 +301,7 @@
         </div>
 
         <div class="info-box">
-          <div class="icon">✉️</div>
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
           <div>
             <h4>Email</h4>
             <p>Curafehealth@gmail.com</p>
@@ -309,7 +309,7 @@
         </div>
 
         <div class="info-box">
-          <div class="icon">📞</div>
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
           <div>
             <h4>Phone</h4>
             <p>+91 91105 48556</p>
