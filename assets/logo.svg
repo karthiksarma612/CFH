@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#37b24d" />
+      <stop offset="1" stop-color="#0b7a28" />
+    </linearGradient>
+    <style>
+      .s{font-family: Poppins, Arial, sans-serif; font-weight:700; fill:#072e18}
+      .m{font-size:36px}
+      .t{font-size:14px; fill:rgba(7,46,24,0.9)}
+    </style>
+  </defs>
+  <rect width="400" height="100" rx="12" fill="white" />
+  <g transform="translate(18,18)">
+    <circle cx="32" cy="32" r="28" fill="url(#g)" />
+    <path d="M22 34c4-6 12-6 16 0" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M22 40c4 6 12 6 16 0" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+    <text x="72" y="42" class="s m">CuraFe</text>
+    <text x="72" y="66" class="s t">Health</text>
+  </g>
+</svg>
